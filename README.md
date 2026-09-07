@@ -34,10 +34,12 @@
 
 ## ダウンロード
 
-> **※ 現在はテスト配布中です。**一般公開はしていません。ZIP は直接お渡ししています。
-> 公開の準備が整い次第、配布先をここに記載します。
+**[→ 最新版をダウンロード](https://github.com/animtools/RefPicker/releases)**（無料・アカウント登録なし）
 
-お渡しした **RefPicker-vX.Y.Z-win64.zip** を解凍して `RefPicker.exe` を起動してください。
+> **テスト版として公開しています。**現場での検証中で、仕様が変わることがあります。
+> 使ってみた感想・詰まった点をいただけると助かります（[SUPPORT.md](./SUPPORT.md)）。
+
+`RefPicker-vX.Y.Z-win64.zip` を解凍して `RefPicker.exe` を起動してください。
 
 - 動作環境: Windows 10 / 11（64bit）。Microsoft Edge WebView2 ランタイム（Windows 11 は標準搭載）。
 - インストール不要のポータブル版です。
@@ -47,9 +49,11 @@
 ## ドキュメント
 
 - [QUICKSTART.md](./QUICKSTART.md) — ダウンロードから最初の絞り込みまでの最短手順
-- [USER_GUIDE.md](./USER_GUIDE.md) — 使い方の詳細（絞り込み・切り抜き・対比表など）
+- [USER_GUIDE.md](./USER_GUIDE.md) — 使い方の詳細（絞り込み・切り抜き・分類タグ・メジャー・対比表）
+- [SYNC_GUIDE.md](./SYNC_GUIDE.md) — 資料の配布と受け取り（**受け取る側は無料・認証不要**）
 - [SUPPORT.md](./SUPPORT.md) — 不具合報告・質問・要望の窓口
 - [CHANGELOG.md](./CHANGELOG.md) — バージョンごとの変更内容
+- [紹介ページ](https://animtools.github.io/RefPicker/landing/) — 画面と使いどころ
 
 ## ライセンス
 

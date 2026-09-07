@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RefPicker — 買い切りプラン準備中</title>
+  <meta name="robots" content="noindex">
+  <!--
+    安定購入ドア（RefPicker 個人買い切り）。
+    **出荷済みビルドがこの URL を参照するため、パスを変えない・削除しない。**
+    アプリ側は .env の BUNDLED_LANDING_PUBLIC_ORIGIN を基点に
+    {ORIGIN}/buy/perpetual.html を開く。
+
+    **価格が未確定のため checkout へは飛ばさない。**
+    買い切りのゲートは「配布物が取得でき、かつ価格が確定していること」で、
+    サブスクとは別に開く（biz-cycle-hub ADR 0004）。
+    暫定価格を公開面に出すと、1件でも売れた時点で値下げができなくなる（同 pricing.md 原則5）。
+
+    ★2026-09-06 時点：Polar の買い切り商品は**ユーザー判断でアーカイブ済み**
+    （スタジオ用と同時。cycles/crossrefpicker.md P0）。価格確定＝実演のフィードバックを
+    見てからなので、再作成もそのときに行う。
+
+    価格確定後に、下の checkout URL への meta refresh + location.replace に戻す:
+      TODO: 買い切り商品を作り直し、その checkout URL をここに記録する
+      （台帳 animtools-license-config/README.md の購入リンク台帳にも同時に記入する）
+  -->
+  <style>
+    body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+           background:#121418; color:#e8eaed;
+           font-family:system-ui,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif; }
+    .box { max-width:560px; padding:40px 32px; text-align:center; line-height:1.9; }
+    h1 { font-size:1.25rem; margin:0 0 20px; }
+    p { margin:0 0 16px; color:#b0b8c8; font-size:.95rem; }
+    a { color:#4a9eff; }
+    .cta { display:inline-block; margin-top:12px; padding:12px 26px; border-radius:10px;
+           background:#4a9eff; color:#08121c; text-decoration:none; font-weight:700; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>買い切りプランは準備中です</h1>
+    <p>RefPicker はテスト段階で公開しており、買い切りプランの提供はまだ開始していません。価格は実際に現場で使っていただいたフィードバックを踏まえて決めます。</p>
+    <p>いまお使いいただける方法は2つあります。<strong>無料版</strong>（索引化・絞り込み・切り抜き・自由タグ・書き出し・プロジェクト1件、そして<strong>資料の受け取りは件数無制限</strong>）と、<strong>All-Access</strong>（スイート全ツールが使え、7日間の無料トライアル付き）です。</p>
+    <a class="cta" href="subscribe.html">All-Access を見る</a>
+    <p style="margin-top:24px"><a href="../">RefPicker トップへ戻る</a></p>
+  </div>
+</body>
+</html>

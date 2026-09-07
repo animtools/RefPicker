@@ -6,9 +6,7 @@
 
 ## 1. 解凍して起動
 
-> **現在はテスト配布中です。**一般公開はしていません。ZIP は直接お渡ししています。
-
-1. お渡しした `RefPicker-vX.Y.Z-win64.zip` を任意の場所に解凍
+1. [リリースページ](https://github.com/animtools/RefPicker/releases)から `RefPicker-vX.Y.Z-win64.zip` をダウンロードし、任意の場所に解凍
 2. `RefPicker.exe` をダブルクリックして起動（インストール不要）
 
 > **SmartScreen の警告が出たら**: 未署名のため「Windows によって PC が保護されました」と表示されることがあります。「詳細情報」→「実行」で起動できます。

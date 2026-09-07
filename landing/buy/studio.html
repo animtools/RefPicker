@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RefPicker — スタジオ用ライセンスのお問い合わせ</title>
+  <meta name="robots" content="noindex">
+  <!--
+    安定購入ドア（RefPicker スタジオ用ライセンス）。
+    **出荷済みビルドがこの URL を参照するため、パスを変えない・削除しない。**
+    アプリ側は .env の BUNDLED_LANDING_PUBLIC_ORIGIN を基点に
+    {ORIGIN}/buy/studio.html を開く。
+
+    **販売はしていない。**組織向けのゲートは
+    「配布物が取得でき、価格が確定し、**さらにテスターのFBが一巡して致命的な問題がない**こと」
+    （biz-cycle-hub ADR 0004）。RefPicker はまだ現場での実演前なので、この条件を満たさない。
+
+    ⚠ **404 にはしない。**このドアは配布済みビルドの共有ボタンから開かれる。
+    404 だと「壊れている」と読まれるうえ、共有機能を使うのは**受け取り側が多い組織**で、
+    その人たちが使い方に辿り着けなくなる（cycles/crossrefpicker.md D2）。
+    売らないが、機能の存在と使い方は公開する — だからここは**問い合わせ先**にする。
+
+    販売を開くときは、下の checkout URL への meta refresh + location.replace に戻す:
+      TODO: スタジオ用商品を作り直し（2026-09-06 にユーザー判断でアーカイブ済み）、
+      その checkout URL をここに記録する
+  -->
+  <style>
+    body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+           background:#121418; color:#e8eaed;
+           font-family:system-ui,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif; }
+    .box { max-width:600px; padding:40px 32px; text-align:center; line-height:1.9; }
+    h1 { font-size:1.25rem; margin:0 0 20px; }
+    p { margin:0 0 16px; color:#b0b8c8; font-size:.95rem; }
+    a { color:#4a9eff; }
+    .cta { display:inline-block; margin-top:12px; padding:12px 26px; border-radius:10px;
+           background:#4a9eff; color:#08121c; text-decoration:none; font-weight:700; }
+    .note { font-size:.85rem; color:#8d94a3; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>スタジオ用ライセンスはお問い合わせください</h1>
+    <p>資料を<strong>配る側</strong>（進行・設定制作）のためのライセンスです。プロジェクトを共有フォルダや NAS へ公開し、更新を配信できるようになります。年額・3台まで。</p>
+    <p>現在は現場での検証中のため、オンラインでの販売は行っていません。導入をご検討の場合はご連絡ください。<strong>受け取る側は人数に関わらず無料</strong>で、ライセンスは必要ありません。</p>
+    <a class="cta" href="mailto:shinosuke.support@gmail.com?subject=RefPicker%20%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA%E7%94%A8%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで問い合わせる</a>
+    <p class="note" style="margin-top:20px">共有の仕組みそのものは <a href="https://github.com/animtools/RefPicker/blob/main/SYNC_GUIDE.md">同期ガイド</a> で公開しています。受け取り側の手順もそちらにあります。</p>
+    <p style="margin-top:20px"><a href="../">RefPicker トップへ戻る</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RefPicker — All-Access のお申し込みへ</title>
+  <meta name="robots" content="noindex">
+  <!--
+    安定購入ドア（All-Access サブスク）。
+    **出荷済みビルドがこの URL を参照するため、パスを変えない・削除しない。**
+    アプリ側は .env の BUNDLED_LANDING_PUBLIC_ORIGIN
+    （= https://animtools.github.io/RefPicker/landing）を基点に
+    {ORIGIN}/buy/subscribe.html を開く。大文字小文字はこの綴りで固定
+    （リポ名を変えると購入導線が死ぬ — biz-cycle-hub ADR 0008）。
+
+    価格や商品構成を変えるときは **この中の URL だけ**を差し替える —
+    配布済みビルドはこのドアしか知らないので、アプリの再ビルドは要らない。
+    （生の checkout URL をビルドに焼くと、価格改定で配布済みビルドの導線が死ぬ）
+
+      checkout: https://buy.polar.sh/polar_cl_DYZaJeRQkGuFblfEgOgKV08VCLCsUVaXKICFZ3qmcly
+      （1本で月額・年額の両方を選べる。金額とプランの正典はハブ料金ページ —
+      ここに写すと価格改定で片方だけ古くなる）
+
+    ★このドアを開けてよい根拠（biz-cycle-hub ADR 0004）:
+    サブスクの条件は「解錠される配布物が1本以上実際に取得でき、実際にその配布物で
+    Pro が解錠されること」。EconTemple が 2026-09-02 に v0.10.0-beta を公開して
+    ダウンロードと SHA-256 照合まで実測済みで、実 All-Access キーでの解錠も実測済み。
+    RefPicker 自身の段階（test）は条件ではない。
+
+    受付を閉じるときは meta refresh と location.replace を外し、案内文へ戻す
+    （このファイルを消さないこと）。
+  -->
+  <meta http-equiv="refresh" content="0; url=https://buy.polar.sh/polar_cl_DYZaJeRQkGuFblfEgOgKV08VCLCsUVaXKICFZ3qmcly">
+  <link rel="canonical" href="https://buy.polar.sh/polar_cl_DYZaJeRQkGuFblfEgOgKV08VCLCsUVaXKICFZ3qmcly">
+  <style>
+    body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+           background:#121418; color:#e8eaed;
+           font-family:system-ui,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif; }
+    .box { max-width:520px; padding:40px 32px; text-align:center; line-height:1.9; }
+    h1 { font-size:1.25rem; margin:0 0 20px; }
+    p { margin:0 0 16px; color:#b0b8c8; font-size:.95rem; }
+    a { color:#4a9eff; }
+    .cta { display:inline-block; margin-top:12px; padding:12px 26px; border-radius:10px;
+           background:#4a9eff; color:#08121c; text-decoration:none; font-weight:700; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>お申し込みページへ移動します</h1>
+    <p>自動で移動しない場合は、下のボタンを押してください。</p>
+    <a class="cta" href="https://buy.polar.sh/polar_cl_DYZaJeRQkGuFblfEgOgKV08VCLCsUVaXKICFZ3qmcly">All-Access のお申し込みへ</a>
+    <p style="margin-top:24px"><a href="../">RefPicker トップへ戻る</a></p>
+  </div>
+  <script>location.replace("https://buy.polar.sh/polar_cl_DYZaJeRQkGuFblfEgOgKV08VCLCsUVaXKICFZ3qmcly");</script>
+</body>
+</html>
