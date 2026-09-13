@@ -1,8 +1,8 @@
 # screenshots
 
-**USER_GUIDE.md** と **SYNC_GUIDE.md** から `./screenshots/<name>.png` の形で参照する画像です。
-（README.md と QUICKSTART.md は画像を使いません。QUICKSTART は最短導線に絞るため、
-README は他文書への導線に絞るためです。）
+**USER_GUIDE.md**・**SYNC_GUIDE.md**・**QUICKSTART.md** から `./screenshots/<name>.png` の形で参照する画像です。
+（README.md は画像を使いません。他文書への導線に絞るためです。QUICKSTART は最短導線に絞り、
+起動で詰まりうる SmartScreen の警告だけを図にしています。）
 
 **すべてデモ用に生成した架空の設定資料**（`record-for-ai` の `demo-data/crossrefpicker`）で撮影しています。
 実在の案件・作品・スタジオの素材は1点も含みません。
@@ -13,6 +13,7 @@ README は他文書への導線に絞るためです。）
 
 | 番号 | 内容 |
 |---|---|
+| 05 / 06 | SmartScreen の警告（「詳細情報」→「実行」） |
 | 10 / 20 / 25 / 30 | 起動直後・ルート登録・データ保存先・メイン画面全景 |
 | 35 | **紹介ページの主役画**（キャラで絞る → 顔の向きで絞る → 種別をまたいで同じ向きが並ぶ） |
 | 40 / 50 / 60 | 多角形切り抜き・右クリックメニュー・タグ編集 |

@@ -29,6 +29,10 @@ flowchart LR
 
 > **SmartScreen の警告が出たら**: 未署名のため「Windows によって PC が保護されました」と表示されることがあります。「詳細情報」→「実行」で起動できます。
 
+![SmartScreen の警告。「詳細情報」に印](screenshots/05_smartscreen_warning.png)
+
+![「詳細情報」を押した後。「実行」に印](screenshots/06_smartscreen_run.png)
+
 > **アプリの更新をする際は、`RefPicker.exe` だけを上書きしてください。**
 > ⚠ **解凍先のフォルダごと消さないでください。** あなたのデータ（索引・切り抜き・タグ・
 > プロジェクト）は、この **exe と同じフォルダの `RefPickerData`** に入っています。
