@@ -19,7 +19,7 @@ BUNDLED_LANDING_PUBLIC_ORIGIN=https://animtools.github.io/RefPicker/landing
 - **出荷済みビルドがこの URL を参照するため、パスを変えない・削除しない。**
   **リポ名の大文字小文字も変えない**（`RefPicker`）。改名は購入導線を殺す
   （[ハブ ADR 0008](../../../../biz-cycle-hub/docs/adr/0008-purchase-doors-live-on-the-product-pages.md)）。
-- **404 にしない。**3枚とも配布済みビルドのボタンから開かれる。売らないドアも「案内」で置く。
+- **404 にしない。** 3枚とも配布済みビルドのボタンから開かれる。売らないドアも「案内」で置く。
 
 ## 3枚の状態（2026-09-07 時点）
 
