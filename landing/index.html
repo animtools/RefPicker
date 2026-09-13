@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>RefPicker — 設定資料を、探す時間から解放されよう。</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+<link rel="apple-touch-icon" href="assets/icon-180.png" />
 <meta name="description" content="アニメ制作の設定資料を索引化し、切り抜き・対比正規化・対比表PNG・配布同期までを1本で。データはすべてローカル、Windows ネイティブのデスクトップアプリ。" />
 <style>
   :root {
@@ -64,11 +66,7 @@
   .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; color: var(--text); }
   .brand:hover { text-decoration: none; }
-  .brand .logo {
-    width: 30px; height: 30px; border-radius: 8px; flex: none;
-    background: linear-gradient(135deg, var(--accent), #2a4a6a);
-    display: grid; place-items: center;
-  }
+  .brand .logo { width: 30px; height: 30px; flex: none; display: block; }
   .nav-links { display: flex; gap: 26px; align-items: center; font-size: 0.92rem; }
   .nav-links a:not(.btn) { color: var(--muted); }
   .nav-links a:hover { color: var(--text); text-decoration: none; }
@@ -234,11 +232,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#">
-      <span class="logo">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#08121c" stroke-width="2.4" stroke-linecap="round">
-          <rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16M4 9h16" opacity=".6"/>
-        </svg>
-      </span>
+      <img class="logo" src="assets/icon-64.png" width="30" height="30" alt="" />
       RefPicker
     </a>
     <nav class="nav-links">
