@@ -25,6 +25,7 @@
 ## よくある質問
 
 - **データはどこに保存されますか？** → [USER_GUIDE §10 データの保存場所](./USER_GUIDE.md#10-データの保存場所)
+- **RefPicker を消すには？** → [USER_GUIDE §10.1 RefPicker を消すとき（アンインストール）](./USER_GUIDE.md#101-refpicker-を消すときアンインストール)
 - **元の画像ファイルは変更されますか？** → [USER_GUIDE §1.1 設定でルートフォルダを登録する](./USER_GUIDE.md#11-設定でルートフォルダを登録する)
 - **起動時に SmartScreen の警告が出ます** → [QUICKSTART §1 解凍して起動](./QUICKSTART.md#1-解凍して起動)
 
