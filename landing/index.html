@@ -546,14 +546,14 @@
   <div class="wrap center">
     <span class="kicker">Trust</span>
     <h2>現場の資料を預かるツールとして、<br />守っていること。</h2>
-    <p class="lead">設定資料は作品の機密そのものです。RefPicker は<b>外部と通信しません</b>。<b>元のファイルにも触りません</b>。</p>
+    <p class="lead">設定資料は作品の機密そのものです。RefPicker は<b>資料を外部へ出しません</b>。<b>元のファイルにも触りません</b>。</p>
     <div class="trust-grid" style="text-align:left;">
       <div class="trust-card">
         <h3>
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--ok)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
           データはすべてローカル
         </h3>
-        <p>索引データベース・サムネイル・切り抜きは、あなたの PC のフォルダにのみ保存（デフォルトの保存先は exe と同じフォルダの <code>RefPickerData</code>。設定で変更できます）。クラウドへの自動アップロードは一切ありません。共有は自分で選んだ共有フォルダを経由するだけです。</p>
+        <p>索引データベース・サムネイル・切り抜きは、あなたの PC のフォルダにのみ保存（デフォルトの保存先は exe と同じフォルダの <code>RefPickerData</code>。設定で変更できます）。クラウドへの自動アップロードは一切ありません。共有は自分で選んだ共有フォルダを経由するだけです。アプリがインターネットに接続するのは<b>ライセンス認証のときだけ</b>で、送るのはライセンスキー・端末 ID・端末名です（資料は含みません）。</p>
       </div>
       <div class="trust-card">
         <h3>
@@ -567,7 +567,7 @@
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--ok)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
           ネイティブの速さ
         </h3>
-        <p>ネイティブ実装と仮想スクロールで、数千枚規模の索引も軽快に。オフラインでも全機能が動作します（共有フォルダ経由のやり取りを除く）。</p>
+        <p>ネイティブ実装と仮想スクロールで、数千枚規模の索引も軽快に。オフラインでも動作します（共有フォルダ経由のやり取りを除く）。ライセンスを使う場合だけ、認証のときと <b>30 日ごとの再確認</b>にインターネットが要ります。</p>
       </div>
     </div>
 
@@ -578,7 +578,7 @@
         <tr><th>データ保存先</th><td>exe と同じフォルダの <code>RefPickerData</code>（設定で変更可。プロジェクトごとにデータベース・サムネを分離）</td></tr>
         <tr><th>対応画像</th><td>PNG / JPEG / GIF / WebP / BMP / TIFF（フォルダを再帰スキャンして索引化。PDF は対象外）</td></tr>
         <tr><th>技術基盤</th><td>Tauri 2（Rust）+ React — ネイティブ性能と軽量フットプリント</td></tr>
-        <tr><th>ネットワーク</th><td>不要。同期は共有フォルダ / NAS / クラウド同期フォルダなど任意の経路を利用</td></tr>
+        <tr><th>ネットワーク</th><td>ふだんは不要。同期は共有フォルダ / NAS / クラウド同期フォルダなど任意の経路を利用。ライセンス認証と 30 日ごとの再確認のときだけインターネットが要ります</td></tr>
       </table>
     </div>
   </div>
@@ -592,7 +592,7 @@
     <div class="faq-list" style="text-align:left;">
       <details>
         <summary>資料が外部に送信されることはありませんか？</summary>
-        <div class="a">ありません。索引・サムネイル・切り抜きはすべてローカル PC 内に保存されます。チーム共有を行う場合も、あなたが指定した共有フォルダを経由するだけで、アプリが独自にネットワーク通信を行うことはありません。NDA 下の資料でも安心して扱えます。</div>
+        <div class="a">ありません。索引・サムネイル・切り抜きはすべてローカル PC 内に保存されます。チーム共有を行う場合も、あなたが指定した共有フォルダを経由するだけです。アプリがインターネットに接続するのは<b>ライセンス認証のときだけ</b>で、送るのはライセンスキー・端末 ID・端末名です（資料は含みません）。NDA 下の資料でも安心して扱えます。</div>
       </details>
       <details>
         <summary>配った資料を、受け取った人が壊してしまうことは？</summary>
