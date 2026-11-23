@@ -39,9 +39,28 @@ RefPicker に資料を入れたあと、**何をタグにして、何を分類�
 - 切り抜き自身がその分類軸の分類を持っていれば、その分類軸では切り抜きの分類が使われます
 - 動画・3D は切り抜きを作れないので、ファイルに付けます
 
-## 3. 例で使う分類軸
+## 3. 分類軸 — アプリが持つものと、足すもの
 
-アプリが持つ分類軸（顔・表情・ショット・部位）に、次のカスタム分類軸を足す例です。
+### 3.1 アプリが持つ分類軸
+
+どのプロジェクトにもはじめから入っている分類軸です。付けられる分類は1つだけで、**部位**だけは複数付けられます。
+
+| 分類軸 | 分類 | 主に使う資料 |
+|---|---|---|
+| <span class="rp-a">顔</span> | 横の向き8つ <span class="rp-v">正面</span> <span class="rp-v">右前45</span> <span class="rp-v">右真横</span> <span class="rp-v">右後45</span> <span class="rp-v">真後ろ</span> <span class="rp-v">左後45</span> <span class="rp-v">左真横</span> <span class="rp-v">左前45</span><br>× 縦の向き3つ <span class="rp-v">あおり45</span> <span class="rp-v">水平</span> <span class="rp-v">俯瞰45</span><br>の組み合わせ（例 <span class="rp-v"><span class="rp-ax">顔</span>左前45・あおり45</span>）と、<span class="rp-v">真俯瞰</span> <span class="rp-v">真あおり</span> | 作監修正・原画・キャラ設定の切り抜き |
+| <span class="rp-a">感情</span><br>（表情のタブ） | <span class="rp-v">中立</span> <span class="rp-v">怒り</span> <span class="rp-v">嫌悪</span> <span class="rp-v">恐怖</span> <span class="rp-v">喜び</span> <span class="rp-v">悲しみ</span> <span class="rp-v">驚き</span> <span class="rp-v">照れ</span> <span class="rp-v">困り</span> <span class="rp-v">その他</span> | 作監修正・表情集の切り抜き |
+| <span class="rp-a">目</span><br>（表情のタブ） | <span class="rp-v">開き</span> <span class="rp-v">見開き</span> <span class="rp-v">半目</span> <span class="rp-v">閉じ</span> <span class="rp-v">片目閉じ</span> | 同上 |
+| <span class="rp-a">口</span><br>（表情のタブ） | <span class="rp-v">開き</span> <span class="rp-v">大開き</span> <span class="rp-v">閉じ</span> <span class="rp-v">歯口</span> | 同上 |
+| <span class="rp-a">ショット</span> | <span class="rp-v">ロングショット</span> <span class="rp-v">フルフィギュア</span> <span class="rp-v">ニーショット</span> <span class="rp-v">ウエストショット</span> <span class="rp-v">バストショット</span> <span class="rp-v">アップショット</span> <span class="rp-v">クローズアップ</span> <span class="rp-v">ディテール</span><br>細かく決めないときは <span class="rp-v">ロング</span> <span class="rp-v">ミディアム</span> <span class="rp-v">アップ</span> | レイアウト・作監修正（どの大きさで描かれた絵か） |
+| <span class="rp-a">部位</span><br>（複数可） | <span class="rp-v">手</span> <span class="rp-v">足</span> <span class="rp-v">髪</span> <span class="rp-v">顔ディテール</span> <span class="rp-v">耳</span> <span class="rp-v">衣装</span> <span class="rp-v">小物</span> | 手・髪などの修正、衣装・小物の設定の切り抜き |
+
+- どの分類軸にも **「対象外」** があります。顔の写っていない切り抜きなどに付けると、「未分類」に出なくなります
+- 新しく作ったプロジェクトでは、はじめから **ショット** が非表示です。使うときは、設定の **「分類」** タブの目のアイコンで表示に戻します（[ユーザーガイド 4.7](USER_GUIDE.md#47-タブに出す分類軸を選ぶ常に表示する分類軸)）
+- 使わない分類軸は、同じ目のアイコンで隠せます。背景だけを扱う人なら、顔・表情・部位を隠しておくとタブが減ります
+
+### 3.2 足すカスタム分類軸の例
+
+アプリが持つ分類軸で足りない分け方は、プロジェクトのカスタム分類軸として作ります（[ユーザーガイド 4.8](USER_GUIDE.md#48-分類軸を作るプロジェクトのカスタム分類軸)）。次のような分類軸を足す例です。
 
 | 分類軸 | 付け方 | 分類の例 | 付ける先 |
 |---|---|---|---|
