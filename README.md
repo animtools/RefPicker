@@ -61,6 +61,7 @@ RefPicker は、登録したフォルダを**丸ごと索引化**します。あ
 
 - [QUICKSTART.md](./QUICKSTART.md) — ダウンロードから最初の絞り込みまでの最短手順
 - [USER_GUIDE.md](./USER_GUIDE.md) — 使い方の詳細（絞り込み・切り抜き・分類タグ・メジャー・対比表）
+- [ORGANIZING_GUIDE.md](./ORGANIZING_GUIDE.md) — 資料の整理ガイド。資料ごとのタグと分類の付け方の例
 - [SYNC_GUIDE.md](./SYNC_GUIDE.md) — 共有ガイド。資料の配布と受け取り、共同編集
 - [SUPPORT.md](./SUPPORT.md) — 不具合報告・質問・要望の窓口
 - [CHANGELOG.md](./CHANGELOG.md) — バージョンごとの変更内容
