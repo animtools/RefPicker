@@ -8,4 +8,21 @@
 .rp-ax { opacity: .7; font-size: 85%; margin-right: .35em; }
 .rp-note { display: inline-block; white-space: nowrap; font-size: 85%; color: #57606a; }
 .rp-nw { white-space: nowrap; }
+.mermaid { margin: 0 0 16px; text-align: center; }
 </style>
+<!-- Mermaid の図（共有ガイド・QUICKSTART）。GitHub Pages（kramdown）は ```mermaid をただのコードとして出すので、ここで図にする。リポジトリの画面は GitHub が自分で描く -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var codes = document.querySelectorAll("pre > code.language-mermaid");
+  if (!codes.length || !window.mermaid) return;
+  codes.forEach(function (code) {
+    var div = document.createElement("div");
+    div.className = "mermaid";
+    div.textContent = code.textContent;
+    code.parentNode.replaceWith(div);
+  });
+  mermaid.initialize({ startOnLoad: false, theme: "default", securityLevel: "strict" });
+  mermaid.run({ querySelector: ".mermaid" });
+});
+</script>
